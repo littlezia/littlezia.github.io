@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 2651058X_Assignment1</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Tansport Network</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  
+   <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+  
+</head>
+
+<body>
+  <div id='map'></div>
+  <div class='map-overlay' id='features'>
+    <h2> Transport Network in UK </h2>
+    <h3> Transportation Characteristics</h3>
+
+
+    <input type="checkbox" id="Railway" >
+    <label for="railway">Railway</label>
+    <input type="checkbox" id="Road">
+    <label for="road">Road</label>
+
+
+    <div class='button-line'>
+      <div class='pure-button-group'>
+        <button class="pure-button" id="button-fly-uk">
+          Zoom to UK
+        </button>
+        <button class="pure-button pure-button-disabled" id="button-fly-scotland">
+          Zoom to Scotland
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- info-box -->
+  <div class="info-box">
+    <h2>Transport in the United Kingdom</h2>
+    <div id='pd'>
+      <p> Transport in the United Kingdom is facilitated with road, air, rail, and water networks. </p>
+      <p> A radial road network totals 29,145 miles of main roads.</p>
+      <p> 2,173 milesof motorways and 213,750 miles of paved roads.</p>
+    </div>
+  </div>
+  
+  <!-- <nav id="menu"
+    style="font-size: 13px;background: #3887be;border: none;position: absolute;top: 350px;color: white;padding: 10px;width: 100px;cursor: pointer;"
+    onclick="toggleHeatmap()">Toggle Heatmap</nav>
+  <nav id="menu"
+    style="font-size: 13px;background: #3887be;border: none;position: absolute;top: 400px;color: white;padding: 10px;width: 100px;cursor: pointer;"
+    onclick="openNewMap()">Open Flow Map</nav> -->
+
+  <script type="text/javascript" src="./map.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
